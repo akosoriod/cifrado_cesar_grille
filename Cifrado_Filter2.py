@@ -55,5 +55,8 @@ def cesar(mensaje,llave):
     mensaje_cifrado=""
     for index,val in enumerate(mensaje):
         caracter = ord(val) ^ ord(llave[0])
-        mensaje_cifrado += str(chr(caracter))
+        car=caracter%253
+        if car<32:
+            car+=32
+        mensaje_cifrado += str(chr(car))
     return mensaje_cifrado
