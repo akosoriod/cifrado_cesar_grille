@@ -151,7 +151,7 @@ class window(QtGui.QWidget):
         else:
             self.msgBox.exec_();
     def next(self):
-        if self.textbox2.toPlainText() != "" :
+        if self.textbox3.toPlainText() != "" :
             self._new_window = window2((str(self.r[0])),self.llave)
             self._new_window.show()
             self.close()

@@ -111,7 +111,7 @@ class window2(QtGui.QWidget):
         self.setGeometry(200, 100, 1000, 600)
         self.setWindowTitle('Icon')
         self.setWindowIcon(QtGui.QIcon('web.png'))
-        self.setWindowTitle("Cifrado Filter 2")
+        self.setWindowTitle("Descifrado Filter 2")
         self.show()
 
     def start(self,text,key):
